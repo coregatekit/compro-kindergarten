@@ -21,7 +21,7 @@ bun init .
 
 ## Add Biome for linting and formatting
 
-We want to use biomejs for format the document files and for lint code quality.
+We want to use BiomeJS to format the document files and to lint code quality.
 
 ```bash
 // install biome for dev dependency
