@@ -35,7 +35,7 @@ bunx biome init
 
 ## Update biome config
 
-You can config the project as you prefer. <br>
-Or you can also use my config [**here**](./biome.json)
+You can update the `biome.json` config file as you prefer. <br>
+Alternatively, you can use my config [**here**](./biome.json).
 <hr>
 
