@@ -17,7 +17,7 @@ bun init .
 <Press enter 2 times>
 ```
 
-![Set up project](/images/project-setup.gif)
+<img src="./images/project-setup.gif" alt="Project Setup" style="width: 75%; height:auto;">
 
 ## Add Biome for linting and formatting
 
@@ -31,7 +31,11 @@ bun add --dev --exact @biomejs/biome
 bunx biome init
 ```
 
-![Set up biome](/images/biome-setup.gif)
+<img src="./images/biome-setup.gif" alt="BiomeJS Setup" style="width: 75%; height:auto;">
 
+## Update biome config
+
+You can config the project as you prefer. <br>
+Or you can also use my config [**here**](./biome.json)
 <hr>
 
