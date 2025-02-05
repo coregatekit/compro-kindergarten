@@ -222,6 +222,20 @@ if (z === 10) {
 	console.log('z is neither 10 nor 20');
 }
 
+// short if statements
+console.log('===== short if statements =====');
+
+// syntax:
+// condition ? expression1 : expression2
+// if the condition is true, expression1 is executed
+// if the condition is false, expression2 is executed
+const a = 10;
+const b = 10;
+const result = a === b ? 'Yes' : 'No';
+console.log('a === b: ', result);
+const result2 = a !== b ? 'Yes' : 'No';
+console.log('a !== b: ', result2);
+
 // switch statements
 console.log('===== switch statements =====');
 // syntax:
@@ -311,10 +325,10 @@ try {
 	if (ans !== 20) {
 		throw 'Answer is not 20';
 	}
-    console.log('Answer is 20');
+	console.log('Answer is 20');
 } catch (error) {
-    console.log('Error: ', error);
-    console.log('Typeof Error: ', typeof error);
+	console.log('Error: ', error);
+	console.log('Typeof Error: ', typeof error);
 }
 
 // finally block
@@ -339,15 +353,15 @@ console.log('===== finally block =====');
 
 const anss: number = 20;
 try {
-    if (anss !== 20) {
-        throw 'Answer is not 20';
-    }
-    console.log('Answer is 20');
+	if (anss !== 20) {
+		throw 'Answer is not 20';
+	}
+	console.log('Answer is 20');
 } catch (error) {
-    console.log('Error: ', error);
-    console.log('Typeof Error: ', typeof error);
+	console.log('Error: ', error);
+	console.log('Typeof Error: ', typeof error);
 } finally {
-    console.log('The program has ended');
+	console.log('The program has ended');
 }
 
 // // throw with error
@@ -356,12 +370,12 @@ console.log('===== throw with error =====');
 // throw error;
 // error is a string or an object
 try {
-    if (ans !== 20) {
-        throw new Error('Answer is not 20');
-    }
+	if (ans !== 20) {
+		throw new Error('Answer is not 20');
+	}
 } catch (error) {
-    console.log('Error: ', error);
-    console.log('Typeof Error: ', typeof error);
+	console.log('Error: ', error);
+	console.log('Typeof Error: ', typeof error);
 }
 
 // In the real world, you can use the Error object to provide more information about the error
