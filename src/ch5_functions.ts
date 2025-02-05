@@ -231,7 +231,7 @@ greetCallback('Wendy', printMessage);
 
 // Example:
 function fetchData(time: number): Promise<string> {
-    console.log('Start executing fetchData function');
+	console.log('Start executing fetchData function');
 	return new Promise((resolve, reject) => {
 		if (time < 3) {
 			setTimeout(() => {
@@ -269,15 +269,15 @@ console.log('Fetching data...');
 
 // Example:
 async function fetchDataAsync(time: number): Promise<string> {
-    console.log('Start executing fetchDataAsync function');
-    try {
-        const data = await fetchData(time);
-        return data;
-    } catch (error) {
-        throw new Error(error);
-    }
+	console.log('Start executing fetchDataAsync function');
+	try {
+		const data = await fetchData(time);
+		return data;
+	} catch (error) {
+		throw new Error(error);
+	}
 }
-fetchDataAsync(2)
+fetchDataAsync(2);
 
 // Function return with single expression
 // In TypeScript, you can use a single expression to return a value from a function.
@@ -293,14 +293,14 @@ console.log(`Result of multiply function: ${multiply(5, 6)}`);
 
 // Example:
 function identity<T>(arg: T): number {
-    if (typeof arg === 'string') {
-        console.log(`Argument is a string: ${arg}`);
-        return arg.length;
-    }
-    if (typeof arg === 'number') {
-        console.log(`Argument is a number: ${arg}`);
-        return arg.toString().length;
-    }
+	if (typeof arg === 'string') {
+		console.log(`Argument is a string: ${arg}`);
+		return arg.length;
+	}
+	if (typeof arg === 'number') {
+		console.log(`Argument is a number: ${arg}`);
+		return arg.toString().length;
+	}
 }
 
 const strIdentity = identity<string>('Hello, World!');
@@ -314,14 +314,36 @@ console.log(`Number identity: ${numberIdentity}`);
 
 // Example:
 function factorial(n: number): number {
-    // if (n === 0) {
-    //     return 1;
-    // } else {
-    //     return n * factorial(n - 1);
-    // }
-    return n === 0 ? 1 : n * factorial(n - 1);
+	// if (n === 0) {
+	//     return 1;
+	// } else {
+	//     return n * factorial(n - 1);
+	// }
+	return n === 0 ? 1 : n * factorial(n - 1);
 }
 
 console.log(`Factorial of 5: ${factorial(5)}`);
 console.log(`Factorial of 12: ${factorial(12)}`);
 console.log(`Factorial of 21: ${factorial(21)}`);
+
+// Closure
+// In TypeScript, a closure is a function that has access to its own scope, the outer function's scope, and the global scope.
+// Closures are useful for creating private variables and functions.
+
+// Example:
+const pet = function (name: string) {
+	const getName = function () {
+		return name;
+	};
+	return getName;
+};
+const myPet = pet('Fluffy');
+console.log(myPet()); // Fluffy
+
+// IIFE (Immediately Invoked Function Expression)
+// In TypeScript, an IIFE is a function that is executed immediately after it is defined.
+// IIFEs are useful for creating private variables and functions.
+
+(function () {
+	console.log('IIFE executed');
+})();
