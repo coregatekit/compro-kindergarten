@@ -4,9 +4,13 @@
   "type": "module",
   "devDependencies": {
     "@biomejs/biome": "1.9.4",
-    "@types/bun": "latest"
+    "@types/bun": "latest",
+    "@types/is-odd": "3.0.4"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "is-odd": "^3.0.1"
   }
 }
